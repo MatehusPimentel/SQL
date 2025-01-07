@@ -1,0 +1,11 @@
+SELECT * FROM DimProduct
+
+SELECT	
+	TOP(1000) *	
+FROM 
+	FactSales
+
+SELECT
+	DISTINCT PRODUCTKEY 
+FROM 
+	FactSales
