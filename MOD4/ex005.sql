@@ -1,0 +1,11 @@
+SELECT TOP (100) * FROM DIMPRODUCT
+
+
+SELECT
+	StockTypeName,
+	SUM(Weight)
+FROM 
+	DIMPRODUCT
+WHERE BrandName = 'CONTOSO'
+GROUP BY StockTypeName
+ORDER BY SUM(Weight) DESC

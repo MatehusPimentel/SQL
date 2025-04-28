@@ -1,0 +1,9 @@
+SELECT * FROM DIMEMPLOYEE
+
+SELECT 
+	DepartmentName,
+	COUNT(DepartmentName)
+FROM 
+	DIMEMPLOYEE
+WHERE Status = 'CURRENT'
+GROUP BY DepartmentName
