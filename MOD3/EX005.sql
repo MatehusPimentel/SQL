@@ -1,0 +1,8 @@
+SELECT * FROM DimProduct
+
+SELECT
+	COUNT(DISTINCT BrandName),
+	COUNT(DISTINCT ClassName),
+	COUNT(DISTINCT ColorName)
+FROM
+	DimProduct
