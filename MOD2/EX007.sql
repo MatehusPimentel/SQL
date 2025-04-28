@@ -1,0 +1,11 @@
+SELECT *
+FROM DimStore
+WHERE EmployeeCount BETWEEN 1 AND 20
+
+SELECT *
+FROM DimStore
+WHERE EmployeeCount BETWEEN 21 AND 50
+
+SELECT *
+FROM DimStore
+WHERE EmployeeCount > 50
